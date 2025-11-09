@@ -185,22 +185,5 @@ function handleTouchMove(evt) {
 
     let xDiff = xDown - xUp;
     let yDiff = yDown - yUp;
-
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-            // Left swipe - increment counter
-            count++;
-            saveCounter();
-        } else {
-            // Right swipe - reset counter
-            if (confirm('هل تريد إعادة تعيين العداد؟')) {
-                count = 0;
-                saveCounter();
-            }
-        }                       
-    } 
-    
-    // Reset values
-    xDown = null;
-    yDown = null;                                             
+                                        
 };
